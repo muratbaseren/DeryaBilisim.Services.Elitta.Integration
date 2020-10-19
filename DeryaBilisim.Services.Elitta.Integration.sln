@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeryaBilisim.Services.Elitta.Integration.Standart", "DeryaBilisim.Services.Elitta.Integration.Standart\DeryaBilisim.Services.Elitta.Integration.Standart.csproj", "{EC8D4519-2CD7-40C2-BFD8-943ED0A94B5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreSample", "AspNetCoreSample\AspNetCoreSample.csproj", "{87BB3E38-FD46-4C3B-B83F-75D4B54331C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EC8D4519-2CD7-40C2-BFD8-943ED0A94B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC8D4519-2CD7-40C2-BFD8-943ED0A94B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC8D4519-2CD7-40C2-BFD8-943ED0A94B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87BB3E38-FD46-4C3B-B83F-75D4B54331C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BB3E38-FD46-4C3B-B83F-75D4B54331C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87BB3E38-FD46-4C3B-B83F-75D4B54331C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87BB3E38-FD46-4C3B-B83F-75D4B54331C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
