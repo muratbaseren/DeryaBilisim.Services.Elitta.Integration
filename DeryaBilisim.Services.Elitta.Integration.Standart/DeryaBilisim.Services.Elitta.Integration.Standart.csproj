@@ -6,6 +6,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/muratbaseren/DeryaBilisim.Services.Elitta.Integration</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/muratbaseren/DeryaBilisim.Services.Elitta.Integration</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Copyright>Derya Bilişim</Copyright>
     <Company>Derya Bilişim</Company>
@@ -16,8 +18,9 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
     <PackageReference Include="RestSharp" Version="106.11.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
   </ItemGroup>
 
 </Project>
