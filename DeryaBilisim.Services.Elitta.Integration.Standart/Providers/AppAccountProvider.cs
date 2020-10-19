@@ -24,10 +24,10 @@ namespace DeryaBilisim.Services.Elitta.Integration.Standart
         /// Get company list.
         /// </summary>
         /// <returns></returns>
-        public IRestResponse<ElittaServiceResponse<AppAccountCompanyUniqueCodeResponse>> GetCompanies()
+        public IRestResponse<ElittaServiceResponse<IEnumerable<AppAccountCompanyUniqueCodeResponse>>> GetCompanies()
         {
             var request = new RestRequest("/AppAccount/Companies", Method.GET, DataFormat.Json);
-            return _client.Get<ElittaServiceResponse<AppAccountCompanyUniqueCodeResponse>>(request);
+            return _client.Get<ElittaServiceResponse<IEnumerable<AppAccountCompanyUniqueCodeResponse>>>(request);
         }
 
         /// <summary>
