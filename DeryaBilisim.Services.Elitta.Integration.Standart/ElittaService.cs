@@ -3,6 +3,7 @@ using System;
 
 namespace DeryaBilisim.Services.Elitta.Integration.Standart
 {
+
     /// <summary>
     /// Elitta service
     /// </summary>

@@ -24,7 +24,9 @@ namespace AspNetCoreSample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddElittaService("http://localhost:62964/api", "maazalar@test.com", "123456");
+
+            var opts = Configuration.GetSection("BielittaIntegration").Get<BielittaIntegrationConfiguration>();
+            services.AddElittaService(opts.Endpoint, opts.Username, opts.Password);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
