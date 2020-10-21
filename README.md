@@ -1,8 +1,8 @@
 # DeryaBilisim.Services.Elitta.Integration
-Bielitta API servisi ile iletişim kuracak olan nuget pack
+Bielitta API servisi ile iletiÅŸim kuracak olan nuget pack
 
 ## Gereksinimler
-API sistemi, bielitta sistemindeki uygulama hesapları içindir. Entegre olan uygulamaların müşterilerine puan kazanımı, puan harcama yönetimi ve benzeri özellikleri kazandırır. Uygulama hesabı kullanıcı adı ve şifreniz ile sisteminizin API ile konuşabilmesi için gerekli **Erişim Anahtar Kodunu** elde edebilirsiniz. Bu erişim anahtarı ile [nuget paketini](https://www.nuget.org/packages/DeryaBilisim.Services.Elitta.Integration.Standart) projenize ekleyerek entegre olabilirsiniz.
+API sistemi, bielitta sistemindeki uygulama hesaplarÄ± iÃ§indir. Entegre olan uygulamalarÄ±n mÃ¼ÅŸterilerine puan kazanÄ±mÄ±, puan harcama yÃ¶netimi ve benzeri Ã¶zellikleri kazandÄ±rÄ±r. Uygulama hesabÄ± kullanÄ±cÄ± adÄ± ve ÅŸifreniz ile sisteminizin API ile konuÅŸabilmesi iÃ§in gerekli **EriÅŸim Anahtar Kodunu** elde edebilirsiniz. Bu eriÅŸim anahtarÄ± ile [nuget paketini](https://www.nuget.org/packages/DeryaBilisim.Services.Elitta.Integration.Standart) projenize ekleyerek entegre olabilirsiniz.
 
 
 ## Endpoints
@@ -12,12 +12,12 @@ Endpoint : https://bielitta.azurewebsites.net/api
 
 ## .NET Core MVC/API App Entegrasyonu
 
-[DeryaBilisim.Services.Elitta.Integration.Standart](https://www.nuget.org/packages/DeryaBilisim.Services.Elitta.Integration.Standart) nuget paketini uygulamanıza ekleyiniz. 
+[DeryaBilisim.Services.Elitta.Integration.Standart](https://www.nuget.org/packages/DeryaBilisim.Services.Elitta.Integration.Standart) nuget paketini uygulamanÄ±za ekleyiniz. 
 
-### Kullanım
+### KullanÄ±m
 
 #### **appsettings.json**
-appsettings.json içerisinde aşağıdaki section ı açarak gerekli endpoint ve uygulama hesap bilgilerinizi giriniz.
+appsettings.json iÃ§erisinde aÅŸaÄŸÄ±daki section Ä± aÃ§arak gerekli endpoint ve uygulama hesap bilgilerinizi giriniz.
 
 ```javascript
 {
@@ -37,7 +37,7 @@ appsettings.json içerisinde aşağıdaki section ı açarak gerekli endpoint ve uygul
 ```
 
 #### **Startup.cs**
-Startup dosyasında gerekli servis entegrasyonunu sağlayınız. appsettings.json değerlerini kullanınız. Bielitta Servisi singleton olarak üretilecek şekilde tanımlanacaktır. Bielitta servis içerisinde yer alan provider ları kullanarak istediğiniz işlemi gerçekleştirebilirsiniz.
+Startup dosyasÄ±nda gerekli servis entegrasyonunu saÄŸlayÄ±nÄ±z. appsettings.json deÄŸerlerini kullanÄ±nÄ±z. Bielitta Servisi singleton olarak Ã¼retilecek Ã¾ekilde tanÄ±mlanacaktÄ±r. Bielitta servis iÃ§erisinde yer alan provider larÄ± kullanarak istediÄŸiniz iÅŸlemi gerÃ§ekleÅŸtirebilirsiniz.
 
 ```csharp
 using DeryaBilisim.Services.Elitta.Integration.Standart;
@@ -54,9 +54,9 @@ public void ConfigureServices(IServiceCollection services)
 
 #### **HomeController.cs**
 
-> Bielitta servisini kullanmak istediğiniz yerde aşağıdaki şekilde Dependency Injection yaparak kullanımını sağlayabilirsiniz.
+> Bielitta servisini kullanmak istediÄŸiniz yerde aÅŸaÄŸÄ±daki ÅŸekilde Dependency Injection yaparak kullanÄ±mÄ±nÄ± saÄŸlayabilirsiniz.
 
-Örnek olarak; belli bir e-mail adrese ait elitta sisteminde kayıtlı müşteri verisi çekilmesi(GetByEmail) eğer kayıt bulunamazsa, müşteri kaydının oluşturulmasının(CreateIndividualAccount) sağlanması. Ardından elitta servisi için kullandığınız hesap ile ilişkili firma verisinin çekilmesi(GetCompanies) ve elde edilen firmalardan ilk firmadan kayıt edilen/elde edilen müşteriye puan aktarımı(WinElitta) sağlanması örneklenmiştir.
+Ã–rnek olarak; belli bir e-mail adrese ait elitta sisteminde kayÄ±tlÄ± mÃ¼ÅŸteri verisi Ã§ekilmesi(GetByEmail) eÄŸer kayÄ±t bulunamazsa, mÃ¼ÅŸteri kaydÄ±nÄ±n oluÅŸturulmasÄ±nÄ±n(CreateIndividualAccount) saÄŸlanmasÄ±. ArdÄ±ndan elitta servisi iÃ§in kullandÄ±ÄŸÄ±nÄ±z hesap ile iliÅŸkili firma verisinin Ã§ekilmesi(GetCompanies) ve elde edilen firmalardan ilk firmadan kayÄ±t edilen/elde edilen mÃ¼ÅŸteriye puan aktarÄ±mÄ±(WinElitta) saÄŸlanmasÄ± Ã¶rneklenmiÅŸtir.
 
 ```csharp
 using AspNetCoreSample.Models;
@@ -175,7 +175,7 @@ namespace AspNetCoreSample.Controllers
 
 
 #### **Home/Index.cshtml**
-View kodunda bir detay bulunmamaktadır.
+View kodunda bir detay bulunmamaktadÄ±r.
 
 ```html
 @{
